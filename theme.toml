@@ -7,7 +7,3 @@ demosite = "https://demo.gethugothemes.com/geeky/"
 tags = ['blog', 'light', 'bootstrap', 'responsive', 'contact-form']
 features = ['responsive']
 min_version = "0.83.1"
-
-[author]
-name = "gethugothemes"
-homepage = "https://gethugothemes.com/"
