@@ -1,10 +1,10 @@
 <div class="widget featured-widget ">
   <div class="widget-title">
-    <h3 class="title-border h5">Featured Post</h3>
+    <h3 class="title-border h5">Novidades</h3>
   </div>
   <div class="d-grid mb-5 gap-3 d-md-block nav nav-pills">
-    <button class="btn btn-sm btn-outline-primary btn-lg me-2 mb-lg-3 mb-xl-0 active" type="button" data-bs-toggle="pill" data-bs-target="#Featured" aria-selected="true">Featured</button>
-    <button class="btn btn-sm btn-outline-primary btn-lg" type="button" data-bs-toggle="pill" data-bs-target="#Recent" aria-selected="false">Recent</button>
+    <button class="btn btn-sm btn-outline-primary btn-lg me-2 mb-lg-3 mb-xl-0 active" type="button" data-bs-toggle="pill" data-bs-target="#Featured" aria-selected="true">Mais lidos</button>
+    <button class="btn btn-sm btn-outline-primary btn-lg" type="button" data-bs-toggle="pill" data-bs-target="#Recent" aria-selected="false">Novos</button>
   </div>
 
   <div class="tab-content">
@@ -41,7 +41,7 @@
             <ul class="list-inline card-meta d-flex align-items-center mb-3">
               <li class="list-inline-item d-flex align-items-center">
                 <i class="fas fa-calendar me-2"></i>
-                <span>{{ time.Format ":date_long" .PublishDate }}</span>
+                <span>{{ time.Format ":date_short" .PublishDate }} • {{ .ReadingTime }} min para ler</span>
               </li>
             </ul>
           </div>
@@ -82,7 +82,7 @@
             <ul class="list-inline card-meta d-flex align-items-center mb-3">
               <li class="list-inline-item d-flex align-items-center">
                 <i class="fas fa-calendar me-2"></i>
-                <span>{{ time.Format ":date_long" .PublishDate }}</span>
+                <span>{{ time.Format ":date_short" .PublishDate }} • {{ .ReadingTime }} min para ler</span>
               </li>
             </ul>
           </div>
