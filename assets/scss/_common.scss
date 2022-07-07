@@ -342,6 +342,18 @@ select {
   color: $text-dark;
 }
 
+.subtitle-portifolio {
+  background-color: $light;
+  border-radius: 5px;
+  padding: 30px 30px;
+  margin: 3em 0;
+  font-size: 20px;
+
+  @include tablet {
+    padding: 30px 30px;
+  }
+}
+
 // content style
 .content {
   margin-bottom: 3em;
