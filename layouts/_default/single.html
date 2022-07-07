@@ -37,7 +37,7 @@
               height="{{$image.Height}}">
           </picture>
           {{ else }}
-          <strong class="text-danger">`{{$imagePath}}` doesn't exist</strong>
+          <strong class="text-danger">`{{$imagePath}}` não existe.</strong>
           {{ end }}
           <!-- /image processing for multiple device -->
           {{ end }}
@@ -62,7 +62,7 @@
           </li>
           <li class="list-inline-item d-flex align-items-center">
             <i class="fas fa-calendar me-2"></i>
-            <span>{{ time.Format ":date_short" .PublishDate }} • {{ .ReadingTime }} min para ler</span>
+            <span>{{ time.Format ":date_short" .PublishDate }} • {{ .ReadingTime }} minutos</span>
           </li>
         </ul>
         <div class="content drop-cap">{{.Content}}</div>
